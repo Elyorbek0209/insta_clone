@@ -12,12 +12,16 @@ class InstaList extends StatelessWidget{
   @override 
   Widget build(BuildContext context){
 
+    
+    /* Here we'll use 'BuildContext context' with 
+    'MediaQuery' to find out the current Devices ScreenSize!*/
 
     var deviceSize = MediaQuery.of(context).size;
+    
 
     return new ListView.builder(
 
-      itemCount: 5,
+      itemCount: 100,
 
       itemBuilder: (context, index) => index == 0 
       
