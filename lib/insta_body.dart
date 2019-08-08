@@ -15,7 +15,11 @@ class InstaBody extends StatelessWidget{
 
       children: <Widget>[
 
-        Flexible(child: InstaList())
+        Flexible(
+         
+          child: InstaList()
+          
+        )
 
       ],
 

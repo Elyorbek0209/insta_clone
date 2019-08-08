@@ -1,54 +1,119 @@
 import 'package:flutter/material.dart';
 import 'package:insta_clone/insta_body.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 
 class InstaHome extends StatelessWidget{
 
 
-  final topBar = new AppBar(
+
+   @override
+  Widget build(BuildContext context){
+
+
+    return new Scaffold(
+
+
+      appBar: topBar,
+
+
+      body: new InstaBody(),
+
+
+
+      bottomNavigationBar: bottomBar(),
+      
+
+    );
+
+  }
+
+
+
+
+
+  final topBar = AppBar(
+
 
     backgroundColor: new Color(0xfff8faf8),
 
+
     centerTitle: true,
+
 
     elevation: 1.0,
 
-    leading: new Icon(Icons.camera_alt),
+
+
+    leading: IconButton(
+
+      icon: Icon(
+        
+        FontAwesomeIcons.camera,
+
+        color: Colors.black,
+
+      ),
+
+      onPressed: (){
+
+        //
+
+      },
+
+    ),
+    
+  
+
 
     title: SizedBox(
 
-      height: 35.0, child: new Image.asset("assets/images/insta_logo1.png")
+
+      height: 35.0, 
+
+      
+      child: Image.asset(
+        
+        "assets/images/insta_logo1.png"
+        
+      ),
+
 
     ),
 
 
+
     actions: <Widget>[
+
 
       Padding(
 
         padding: const EdgeInsets.only(right: 12.0),
 
-        child: Icon(Icons.send),
+        child: Icon(
+        
+          Icons.send,
+
+          color: Colors.black,
+          
+        ),
 
       )
+
 
     ],
 
   );
 
 
-  @override
-  Widget build(BuildContext context){
-
-    return new Scaffold(
-
-      appBar: topBar,
-
-      body: new InstaBody(),
 
 
-      bottomNavigationBar: new Container(
+  Widget bottomBar(){
+
+
+    return Container(
+
 
         color: Colors.white,
 
@@ -56,13 +121,17 @@ class InstaHome extends StatelessWidget{
 
         alignment: Alignment.center,
 
+
         child: new BottomAppBar(
 
           child: new Row(
 
+
             mainAxisAlignment: MainAxisAlignment.spaceAround,
 
+
             children: <Widget>[
+
 
               new IconButton(
 
@@ -72,6 +141,8 @@ class InstaHome extends StatelessWidget{
 
               ),
 
+
+
               new IconButton(
 
                 icon: Icon(Icons.search),
@@ -79,6 +150,8 @@ class InstaHome extends StatelessWidget{
                 onPressed: null,
 
               ),
+
+
 
 
               new IconButton(
@@ -90,6 +163,7 @@ class InstaHome extends StatelessWidget{
               ),
 
 
+
               new IconButton(
 
                 icon: Icon(Icons.favorite),
@@ -97,6 +171,7 @@ class InstaHome extends StatelessWidget{
                 onPressed: null,
 
               ),
+
 
 
               new IconButton(
@@ -107,18 +182,25 @@ class InstaHome extends StatelessWidget{
 
               )
 
+
             ],
+
 
           ),
 
         ),
 
 
-      ),
+      );
 
-    );
 
   }
+
+
+
+
+
+ 
 }
 
 
