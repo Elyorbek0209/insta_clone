@@ -229,7 +229,7 @@ class InstaList extends StatelessWidget{
              
                               image: new NetworkImage(
              
-                                  "https://scontent-lga3-1.cdninstagram.com/vp/c188031b0c8b625d8e7443f03f698739/5DAB922A/t51.2885-19/s150x150/57071110_813551222351922_7206735856017604608_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com")),
+                                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ95VnsKtlvVbdlPLMIZHWLg_Xob10b874YBP77JZ0MdHiZHzd0")),
              
                         ),
              
